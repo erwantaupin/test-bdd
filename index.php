@@ -23,6 +23,12 @@
         <input type="password" name="password" id="password" value="" autocomplete="off" /></td>
      </tr>
      <tr>
+     <label for="pet-select">Votre rang:</label>
+        <select name="id_role" id="pet-select">
+          <option value="">--Please choose an option--</option>
+          <option value="Admin">admin</option>
+          <option value="User">user</option>
+        </select>
       <td>
          <input type="submit" name="submitBtnLogin" id="submitBtnLogin" value="Login" />
          <span class="loginMsg"><?php echo @$msg;?></span>
